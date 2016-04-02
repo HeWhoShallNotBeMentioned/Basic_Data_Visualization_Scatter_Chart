@@ -15,6 +15,14 @@
       {country: "Belgium", spending: 10.5, life: 80.3}
     ];
 
+    var data = [];
+    for (var i = 0; i < health_data.length; i++) {
+      data.push([
+        health_data[i].spending,
+        health_data[i].life
+      ]);
+    };
+
       window.onload = function () {
         Flotr.draw(document.getElementById("chart"), data, {
 
