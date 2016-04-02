@@ -1,12 +1,12 @@
 # _Simple Scatter Chart_
 
-#### _{Displays What % of the world population lives in extreme poverty}, {4/1/2016}_
+#### _{Compares the %of GDP and life expectancy.}, {4/2/2016}_
 
 #### By _**{Chris Underwood}**_
 
 ## Description
 
-_{Static chart that prints the % of the world population lives in extreme poverty. Only 2 sections of the pie chart those in extreme poverty and those not. A label for the extreme poverty group has been added. Data is stored in a series of arrays in the script. Adapted in part from Data Visualization with JavaScript by Stephen A. Thomas}_
+_{Static chart that prints the % of GDP for each country and their life expectancy. For simplicity the chart only labels countries by region except for the United States because it is such an outlier.  Data is stored in a series of arrays in the script. Adapted  from Data Visualization with JavaScript by Stephen A. Thomas}_
 
 ## Setup/Installation Requirements
 Download the files.
