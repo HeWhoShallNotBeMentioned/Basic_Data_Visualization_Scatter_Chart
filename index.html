@@ -24,7 +24,11 @@
     };
 
       window.onload = function () {
-        Flotr.draw(document.getElementById("chart"), [{ data: data, points: {show: true} }]
+        Flotr.draw(document.getElementById("chart"), [{ data: data, points: {show: true} }],
+        {
+          xaxis: {min: 5, max: 20},
+          yaxis: {min: 70, max: 85}
+        }
       );
       };
 
