@@ -79,7 +79,15 @@
 
 
       window.onload = function () {
-        Flotr.draw(document.getElementById("chart"), [{ data: data, points: {show: true} }],
+        Flotr.draw(document.getElementById("chart"),
+        [
+          {data: pacific, label: "Pacific", points: {show: true} },
+          {data: europe, label: "Europe", points: {show: true} },
+          {data: americas , label: "Americas", points: {show: true} },
+          {data: mideast, label: "Middle East", points: {show: true} },
+          {data: asia, label: "Asia", points: {show: true} },
+          {data: us, label: "United States", points: {show: true} }
+         ],
         {
           title: "Life Expectancy vs. Health-Care Spending",
           subtitle: "(by country, 2010 OECD data)",
