@@ -24,11 +24,9 @@
     };
 
       window.onload = function () {
-        Flotr.draw(document.getElementById("chart"), data, {
-
-
-
-      }
+        Flotr.draw(document.getElementById("chart"), [{ data: data, points: {show: true} }]
+      );
+      };
 
     </script>
   </body>
