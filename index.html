@@ -9,19 +9,74 @@
     <script type="text/javascript" src="js/flotr2.js"> </script>
     <script>
 
-    var health_data = [
-      {country: "Australia", spending: 9.1, life: 81.8},
+    var pacific_data = [
+      {country: "Australia", spending: 9.1, life: 81.8}
+    ];
+
+    var europe_data = [
       {country: "Austria", spending: 11.0, life: 80.7},
       {country: "Belgium", spending: 10.5, life: 80.3}
     ];
 
-    var data = [];
-    for (var i = 0; i < health_data.length; i++) {
-      data.push([
-        health_data[i].spending,
-        health_data[i].life
+    var americas_data = [
+      {country: "Ecuador", spending: 9.0, life: 80.3}
+    ];
+
+    var mideast_data = [
+      {country: "Qatar", spending: 6.3, life: 72.3}
+    ];
+
+    var asia_data = [
+      {country: "Japan", spending: 10.5, life: 83.3}
+    ];
+
+    var us_data = [
+        {country: "United States", spending: 17.6, life: 78.7}
+    ];
+
+    var pacific = [], europe = [], americas = [], mideast = [], asia = [], us = [];
+    for (var i = 0; i < pacific_data.length; i++) {
+      pacific.push([
+        pacific_data[i].spending,
+        pacific_data[i].life
       ]);
     };
+
+    for (var i = 0; i < europe_data.length; i++) {
+      europe.push([
+        europe_data[i].spending,
+        europe_data[i].life
+      ]);
+    };
+
+    for (var i = 0; i < americas_data.length; i++) {
+      americas.push([
+        americas_data[i].spending,
+        americas_data[i].life
+      ]);
+    };
+
+    for (var i = 0; i < mideast_data.length; i++) {
+      mideast.push([
+        mideast_data[i].spending,
+        mideast_data[i].life
+      ]);
+    };
+
+    for (var i = 0; i < asia_data.length; i++) {
+      asia.push([
+        asia_data[i].spending,
+        asia_data[i].life
+      ]);
+    };
+
+    for (var i = 0; i < us_data.length; i++) {
+      us.push([
+        us_data[i].spending,
+        us_data[i].life
+      ]);
+    };
+
 
       window.onload = function () {
         Flotr.draw(document.getElementById("chart"), [{ data: data, points: {show: true} }],
